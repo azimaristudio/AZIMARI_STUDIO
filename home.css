@@ -1,0 +1,74 @@
+/* ========================================================================= */
+/*                              VARIAVEIS GLOBAIS                            */
+/* ========================================================================= */
+
+
+/* ===== VARIÁVEIS DE COR =====
+cores do site em um so lugar, mudar aqui que muda no site todo */
+:root{
+    --bg: #151515;
+    --fg: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background: var(--bg);
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    gap: clamp(1rem, 4vw, 3rem);  
+    user-select: none;        
+    -webkit-user-select: none;
+    -moz-user-select: none;      
+}
+
+/* ========================================================================= */
+
+/*estilo compartilhado pelos dois titulos cima-baixo*/
+
+.linha-de-cima, .linha-de-baixo{
+    font-weight: 900;
+    font-style: italic;
+    line-height: 0.82;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 100%;
+    color: var(--fg);
+}
+
+.linha-de-cima{
+    font-size: clamp(3rem, 18vw, 17rem);
+    text-align: left;      /* COMMING mais à esquerda */
+}
+.linha-de-baixo{
+    font-size: clamp(3.5rem, 22vw, 21rem);
+    text-align: right;     /* SOON mais à direita */
+    padding-right: 5vw;   /* pra não estourar ou colar na borda */
+}
+
+.meio{
+    font-weight: 300; /*finura*/
+    font-style: normal;
+    font-size: clamp(1rem, 2.2vw, 1.6rem);
+    letter-spacing: 0.15em;
+    color: var(--fg);
+    text-align: center;
+    padding: clamp(0.4rem, 2vh, 1rem) 0;
+    text-transform: uppercase;
+    
+}
