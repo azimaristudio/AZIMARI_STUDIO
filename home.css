@@ -1,0 +1,48 @@
+/*configuração global para alinhamento dos lados*/
+
+* {
+    margin: 0; /* Tira margem padrão de todos os elementos */
+    padding: 0; /* tira espaçamento interno padrão */
+    box-sizing: border-box; /* Faz largura e altura incluírem padding e bordas */
+}
+
+body {
+    background-color: #151515;
+    width: 100%; /* body ocupa 100% da largura disponível */
+    min-height: 100vh;  /* Faz body ter no min a altura total da tela */
+    max-width: 1350px; /* Limita a largura max do conteúdo a YYY px */
+    margin: 0 auto; /* Tira margem vertical e centraliza horizontalmente */
+    padding: 40px 30px; /* 40px em cima/baixo e 30px nas laterais */
+    line-height: 2;
+    color: #ffffff; 
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* ============================================================= PRIMEIRA PARTE DO SITE*/
+
+/*cabeçalho*/                 /*<--- vamo organizando desse jeitinho: PARTE TAL E QUAL SEÇÃO DESSA PARTE*/
+.menu-de-cima ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    color: #ffffff;
+    margin-bottom: 150px; /*espaço para a parte que vem em seguida*/
+}
+.menu-de-cima ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*Meio - pós cabeçalho*/
+
+
+/* ============================================================= SEGUNDA PARTE DO SITE*/
+
+
+/* ============================================================= TERCEIRA PARTE DO SITE*/
+
+
+/* ============================================================= QUARTA PARTE DO SITE*/
